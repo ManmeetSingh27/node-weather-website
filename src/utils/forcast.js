@@ -13,8 +13,12 @@ const forcast = (latitude, longitude, callback) => {
             callback('Unable to find location', undefined)
        } else{
             callback(undefined, {
-                 realforcast: body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degress out. It feels like ' + body.current.feelslike + ' degress out.',
-                 datetime: body.location.localtime_epoch
+               description: body.current.weather_descriptions[0],
+               temperature: body.current.temperature,
+               feelslike: body.current.feelslike,
+               datetime: body.location.localtime_epoch,
+               windspeed: body.current.wind_speed,
+               icon: body.current.weather_icons[0]
             })
        }
     })

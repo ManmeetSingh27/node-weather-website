@@ -59,7 +59,7 @@ app.get('/weather', (req,res) => {
         
     
     
-         forcast(latitude,longitude,(error,{realforcast,datetime})=>{
+         forcast(latitude,longitude,(error,forcastdata)=>{
 
             
 
@@ -67,9 +67,8 @@ app.get('/weather', (req,res) => {
                   return res.send({error})
               }
              res.send({
-                 forcast:realforcast,
+                 forcast:forcastdata,
                  location,
-                 datetime,
                  address:req.query.address
              })
 
@@ -118,3 +117,4 @@ app.get('*',(req,res) => {
 app.listen(port, () => {
     console.log('Server is up on port ' + port )
 })
+

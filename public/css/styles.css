@@ -1,14 +1,19 @@
 body {
+   background-image: url("6.jpg");
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
    background-color: #007580;
     color: #333333;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 650px;
+    
     margin: 0 auto;
     padding: 0 16px;
-
+   
     display: flex;
    flex-direction: column;
    min-height: 100vh;
+   height: 100vh;
  }
 
  
@@ -39,130 +44,146 @@ body {
     text-decoration: none;
  }
 
+ .headingstyle {
+    
+    width: 100%;
+    height: 20%;
+    text-align: center;
+ }
 
+ .linking {
+    text-align: center;
+    width: 100%;
+    
+    margin-top: 15px;
+    height: 10%;
+    position: relative;
+    font-size: 20px;
+    
 
+ }
 
- :root {
-   --primary-color: #000;
-   --secondary-color: #fff;
+ a {
+    padding-right: 25px;
+ }
+
+ a:link {
+   color: #000000;
+ }
+ 
+ 
+ a:visited {
+   color: #333333;
+ }
+ 
+ a:hover {
+   color: #dff3e3;
+ }
+ 
+ input[type=text] {
+   width: 20%;
+   padding: 10px 20px;
+   margin: 4px 0;
+   border-radius: 25px;
+   box-sizing: inherit;
+   font-size: 18px;
+   border-color: #864000;
+   
+   
+ }
+
+ button {
+   padding: 10px 20px;
+   margin: 8px 0;
+   border-radius: 25px;
+   box-sizing:border-box;
+   font-size: 18px;
+   
+   border-color: #864000;
+ }
+
+ form {
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ .content {
+    flex-grow: inherit;
+    
+ }
+
+ #message1 {
+    text-align: center;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: ivory;
+
+ }
+
+ #message2 {
+   text-align: center;
+   font-size: 15px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   color: ivory;
+
 }
 
-html {
-   transition: all 0.5s ease-in;
+#message4 {
+   text-align: center;
+   font-size: 18px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   color: ivory;
+
 }
 
-html.dark {
-   --primary-color: #fff;
-   --secondary-color: #333;
+#message5 {
+   text-align: center;
+   font-size: 18px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   color: ivory;
+
 }
 
-html.dark {
-   background-color: #111;
-   color: var(--primary-color);
-}
-
-.toggle {
-   cursor: pointer;
-   background-color: var(--primary-color);
-   color: var(--primary-color);
-   border: 0;
-   border-radius: 4px;
-   padding: 8px 12px;
+#message3 {
    position: absolute;
-   top: 100px;
+   left: 80vh;
+   bottom: 23vh;
 }
 
-.toggle:focus {
-   outline: none;
+img {
+   width: 50px;
+   height: 50px;
+   border-radius: 25px;
 }
 
-.clock-container {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-
+.aboutpara {
+   text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: ivory;
 }
 
-.clock {
-   position: relative;
-   width: 200px;
-   height: 200px;
-   background: #f0f0f0;
-
+.insidehelp {
+   text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: ivory;
 }
 
-.needle {
-   background-color: var(--primary-color);
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   height: 65px;
-   width:3px;
-   transform-origin: bottom center;
+.address:link {
+   color: #99bbad;
+ }
+
+.address:visited {
+   color: #99bbad;
 }
 
-.needle.hour {
-   transform: translate(-50%, -100%) rotate(0deg);
-}
-
-.needle.minutr {
-   transform: translate(-50%, -100%) rotate(0deg);
-   height: 100px;
-}
-
-.needle.hour {
-   transform: translate(-50%, -100%) rotate(0deg);
-   height: 100px;
-   background-color: #e74c3c;
-}
-
-.center-point {
-   background-color: #e74c3c;
-   width: 10px;
-   height: 10px;
-   position: absolute;
-   top: 50%;
-   left:50%;
-   transform: translate(-50%, -50%);
-   border-radius: 50%;
-}
-
-.center-point:after {
-   content: '';
-   background-color: var(--primary-color);
-   width: 5px;
-   height: 5px;
-   position: absolute;
-   top: 50%;
-   left:50%;
-   transform: translate(-50%, -50%);
-   border-radius: 50%;
-}
-
-.time {
-   font-size: 60px;
-
-}
-
-.date {
-
-   color: #aaa;
-   font-size: 14px;
-   letter-spacing: 0.3px;
-   text-transform: uppercase;
-}
-
-.date.circle {
-   background-color: var(--primary-color);
-   color: var(--secondary-color);
-   border-radius: 50%;
-   height: 18px;
-   width: 18px;
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   line-height: 18px;
-   transition: all 0.5s ease-in;
-   font-size: 12px;
-}
+ .address:hover {
+   color: #1f441e;
+ }
